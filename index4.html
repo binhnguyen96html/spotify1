@@ -1,0 +1,452 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Spotify</title>
+    
+        <!-- google font  -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Gotu&family=Kanit:wght@500&family=Montserrat:wght@400;500;600;700;900&family=Poppins:wght@500&family=Public+Sans:ital,wght@0,500;1,700&family=Questrial&family=Quicksand:wght@300;400;500;600;700&family=Roboto+Condensed&display=swap" rel="stylesheet">
+    
+    
+        <!-- css link  -->
+        <link rel="stylesheet" href="styles4.css">
+    
+        <!-- bootstrap-icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"></head>
+        
+        <!-- bootstrap script -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    
+        <!-- font awesome -->
+        <script src="https://kit.fontawesome.com/373b6cf8f7.js" crossorigin="anonymous"></script>        
+        
+    <header >
+    
+    
+        <div class="menu_side ">
+            <div class="spotify0">
+                <h1> <a href="index.html"> <i class="bi bi-spotify"></i> Spotify </a> </h1>
+            </div>
+            <div class="spotify1">
+                <h4><a href="index.html"><i class="bi bi-house-door-fill"></i>Home</a></h4>
+                <h4><a href="index2.html"><i class="bi bi-search"></i>Search</a> </h4>
+                <h4><a href="#"><i class="bi bi-collection-fill"></i> My library </a></h4>
+            </div>
+    
+            <div class="spotify2">
+                <h4><a href="#"><i class="bi bi-plus-square-fill"></i> Create Playlist </a></h4>
+                <h4><a href="#"><i class="bi bi-bag-heart-fill"></i> Liked Songs </a></h4>
+            </div>
+    
+            <div class="spotify3">
+                <h4>Cookies</h4>
+                <h4>Privacy</h4>
+            </div>
+    
+        </div>
+    
+    
+    
+    
+            
+    
+        <div class="song_side" >
+    
+            <!-- nav bar -->
+            <nav class="navbar navbar-expand-lg navbar-dark">
+    
+                <a class="backForward navbar-brand" href="#">
+                        <i class="bi bi-chevron-left"></i>
+                        <i class="bi bi-chevron-right"></i>
+                </a>
+    
+                <form>
+                    <div class="input-group">
+                        <span class="input-group-text" id="basic-addon1"><i class="bi bi-search"></i></span>
+                        <input type="text" class="form-control" placeholder="What do you want to listen to?" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                </form>
+    
+    
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                <div class="text collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="#" class=" nav-link">Premium</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class=" nav-link">Support</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class=" nav-link">Download</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">|</a>
+                        </li>
+                        <li>
+                            <button type="button" class="btn btn-link">Sign up</button>                        
+                        </li>
+                        <li>
+                            <button type="button" class=" btn btn-light rounded-5 " >Log in</button>
+                        </li>
+                    </ul>
+                </div> 
+    
+            </nav>
+    
+    
+            <!-- song side content  -->
+            <div class="song_side_content">
+    
+                <!-- song_image Title --> 
+                <div class="row">
+                    <div class="card col-12 bg-dark" >
+                        <div class="row g-0">
+                            <div class="col-2 ms-4 mt-4 mb-4">
+                                <img src="image/stay.png" class="img-fluid" >
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                <h5 class="card-title mt-5">SONG</h5>
+                                <h1 class="card-title-big">STAY (with Justin Bieber)</h1>
+                                <p class="card-text">The Kid LAROI 2021 2:21</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- song side container  -->
+                <div class="songsideContainer">
+    
+                    <!-- song side icon  -->
+                        <div class="song_side_icon">
+                            <i class="bi playListPlay bi-play-circle-fill" id="2"></i>
+                            <i class="fa-regular fa-heart"></i>    
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                    
+                    <!-- lyrics  -->
+                    <div class="lyric">
+                        <h5>Lyrics</h5>
+                        <p>
+                            I do the same thing I told you that I never would <br>
+                            I told you I'd change, even when I knew I never could <br>
+                            Know that I can't find nobody else as good as you <br>
+                            I need you to stay, need you to stay, hey <br>
+                            
+                            I get drunk, wake up, I'm wasted still <br>
+                            I realize the time that I wasted here <br>
+                            I feel like you can't feel the way I feel <br>
+                            I'll be fucked up if you can't be right here <br>
+                            
+                            Oh-whoa (oh-whoa-whoa) <br>
+                            Oh-whoa (oh-whoa-whoa) <br>
+                            Oh-whoa (oh-whoa-whoa) <br>
+                            I'll be fucked up if you can't be right here <br>
+                            
+                            I do the same thing I told you that I never would <br>
+                            I told you I'd change, even when I knew I never could <br>
+                            Know that I can't find nobody else as good as you <br>
+                            I need you to stay, need you to stay, hey <br>
+                            I do the same thing I told you that I never would <br>
+                            I told you I'd change, even when I knew I never could <br>
+                            Know that I can't find nobody else as good as you <br>
+                            I need you to stay, need you to stay, hey <br>
+                            
+                            When I'm away from you, I miss your touch (ooh) <br>
+                            You're the reason I believe in love <br>
+                            It's been difficult for me to trust (ooh) <br>
+                            And I'm afraid that I'ma f*ck it up <br>
+                            Ain't no way that I can leave you stranded <br>
+                            'Cause you ain't ever left me empty-handed <br>
+                            And you know that I know that I can't live without you <br>
+                            So, baby, stay <br>
+                            
+                            Oh-whoa (oh-whoa-whoa) <br>
+                            Oh-whoa (oh-whoa-whoa) <br>
+                            Oh-whoa (oh-whoa-whoa) <br>
+                            I'll be fucked up if you can't be right here <br>
+                            
+                            I do the same thing I told you that I never would <br>
+                            I told you I'd change, even when I knew I never could <br>
+                            Know that I can't find nobody else as good as you <br>
+                            I need you to stay, need you to stay, hey <br>
+                            I do the same thing I told you that I never would <br>
+                            I told you I'd change, even when I knew I never could <br>
+                            Know that I can't find nobody else as good as you <br>
+                            I need you to stay, need you to stay, hey <br>
+                            
+                            Whoa-oh <br>
+                            I need you to stay, need you to stay, hey
+                        </p>
+                    </div>
+
+                    <!-- author of lyric  -->
+                    <div class="author">
+                        <div class="author_Img"><img src="image/laroi.png"></div>
+                        <div class="author_Name">
+                            <h6>ARTIST</h6>
+                            <p>The Kid LAROI</p>
+                        </div>
+                    </div>
+
+                    <div class="author2">
+                        <p>Popular Tracks by</p>
+                        <h3>The Kid LAROI</h3>
+                    </div>
+
+                    <!-- song side table  -->
+                    <table class="table ms-5 mt-0 borderless">
+  
+                         <!-- table header  -->
+                        <thead>
+                        <tr>
+                            <div class="row">
+                                <th scope="col" class="col-4 textTitle ps-3"></th>
+                                <th scope="col" class="col-4 textTitle"></th>
+                                <th scope="col" class="col-2 textTitle"></th>
+                            </div>
+                        </tr>
+                        </thead>
+    
+                        <!-- table body  -->
+                        <tbody>
+                                
+                            <!-- row 1 -->
+                            <tr>
+                                <th scope="row">
+                                    <div class="songListTitle">
+                                        <div class="numberTitle">
+                                            <p>1</p>
+                                        </div>
+                                        <div class="songTitle">
+                                            <div class="imageTitle" ><img src="image/stay.png"></div>
+                                        </div>
+                                        <div class="textListTitle">
+                                            <p class="textTitle">STAY (with Justin Bieber)</p>
+                                        </div>
+                                    </div>
+                                </th>
+                                <td class="view">2,137,566,223</td>
+                                <td class="timeText">2:21</td>
+                            </tr>
+
+                            <!-- row 2 -->
+                            <tr>
+                                <th scope="row">
+                                    <div class="songListTitle">
+                                        <div class="numberTitle">
+                                            <p>2</p>
+                                        </div>
+                                        <div class="songTitle">
+                                            <div class="imageTitle" ><img src="image/thousand.png"></div>
+                                        </div>
+                                        <div class="textListTitle">
+                                            <p class="textTitle">Thousand Miles</p>
+                                        </div>
+                                    </div>
+                                </th>
+                                <td class="view">150,923,628</td>
+                                <td class="timeText">2:44</td>
+                            </tr>
+
+                            <!-- row 3 -->
+                            <tr>
+                                <th scope="row">
+                                    <div class="songListTitle">
+                                        <div class="numberTitle">
+                                            <p>3</p>
+                                        </div>
+                                        <div class="songTitle">
+                                            <div class="imageTitle" ><img src="image/withOutYou.png"></div>
+                                        </div>
+                                        <div class="textListTitle">
+                                            <p class="textTitle">WITHOUT YOU</p>
+                                        </div>
+                                    </div>
+                                </th>
+                                <td class="view">758,538,250</td>
+                                <td class="timeText">2:41</td>
+                            </tr>
+
+                             <!-- row 4 -->
+                             <tr>
+                                <th scope="row">
+                                    <div class="songListTitle">
+                                        <div class="numberTitle">
+                                            <p>4</p>
+                                        </div>
+                                        <div class="songTitle">
+                                            <div class="imageTitle" ><img src="image/hateThe.png"></div>
+                                        </div>
+                                        <div class="textListTitle">
+                                            <p class="textTitle">Hate The Other Side (with Marshmello & The Kid Laroi</p>
+                                        </div>
+                                    </div>
+                                </th>
+                                <td class="view">332,986,322</td>
+                                <td class="timeText">2:40</td>
+                            </tr>
+
+                            <!-- row 5 -->
+                            <tr>
+                                <th scope="row">
+                                    <div class="songListTitle">
+                                        <div class="numberTitle">
+                                            <p>5</p>
+                                        </div>
+                                        <div class="songTitle">
+                                            <div class="imageTitle" ><img src="image/go.png"></div>
+                                        </div>
+                                        <div class="textListTitle">
+                                            <p class="textTitle">GO (feat.Juice WRLD)</p>
+                                        </div>
+                                    </div>
+                                </th>
+                                <td class="view">396,844,504</td>
+                                <td class="timeText">2:40</td>
+                            </tr>
+    
+                       
+                    
+                        </tbody>
+                    </table>
+               
+    
+                    <!-- footer -->
+                    <footer>
+                        <div class="row footer_section ">
+                            <div class="col-3">
+                                <ul>
+                                    <li class="footer_header">Company</li>
+                                    <li>About</li>
+                                    <li>Jobs</li>
+                                    <li>For the Record</li>
+                                </ul>
+                            </div>
+    
+                            <div class="col-3">
+                                <ul>
+                                    <li class="footer_header">Communites</li>
+                                    <li>For Artists</li>
+                                    <li>Developers</li>
+                                    <li>Advertising</li>
+                                    <li>Investors</li>
+                                    <li>Vendor</li>
+                                </ul>
+                            </div>
+    
+                            <div class="col-3">
+                                <ul>
+                                    <li class="footer_header">Useful links</li>
+                                    <li>Support</li>
+                                    <li>Free Mobile App</li>
+                                    <li>Car Thing</li>
+                                </ul>
+                            </div>
+    
+                            <div class="col-3">
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-facebook"></i>
+                            </div>
+    
+    
+                            <hr>
+    
+                            <div class="col-10 footer_section_2">
+                                <ul>
+                                    <li>Legal</li>
+                                    <li>Privacy Center</li>
+                                    <li>Privacy Policy</li>
+                                    <li>Cookies</li>
+                                    <li>About Ads</li>
+                                    <li>Additional CA Privacy Disclosures</li>
+                                </ul>
+                            </div>
+    
+                            <div class="col-2 footer_section_2">
+                                <ul>
+                                    <li><i class="fa-regular fa-copyright"></i></li>
+                                    <li>2022 Spotify AB</li>
+                                </ul>
+                                
+                            </div>
+    
+                        </div>
+    
+    
+                        
+    
+    
+    
+                    </footer>
+    
+                </div>
+            </div>
+    
+        </div>
+    
+    
+    
+    
+    
+        <div class="master_play  ">
+    
+                <div class="master_play0"></div>
+    
+    
+                <div class="master_play1">
+                    <div class="icon">
+                            <i class="bi shuffle bi-shuffle"></i>
+                            <i class="bi start bi-skip-start-fill"></i>
+                            <i class="bi pause bi-pause-circle-fill"></i>
+                            <i class="bi skip bi-skip-end-fill"></i>
+                            <i class="bi repeat bi-repeat"></i>
+                    </div>
+                    
+                    <div class="bar1">
+                        <span id="currentStart1">0:00</span>
+    
+                        <div class="barRange">
+                            <input type="range"  id="seek" min="0" max="100">
+                            <div class="barRange1" id="bar2"></div>
+                            <div class="dot"></div>
+                        </div>
+    
+                        <span id="currentStart2">0:00</span>
+    
+                    </div>
+    
+                </div>
+    
+                <div class="master_play2">
+                    <div class="icon">
+                        <i class="bi mic bi-mic"></i>
+                        <i class="bi list bi-view-list"></i>
+                        <i class="bi tablet bi-tablet"></i>
+                        <i class="bi volume bi-volume-up"></i>
+                    </div>
+    
+                    <div class="volRange">
+                        <input type="range" min="0" max="100">
+                        <div class="volRange1"></div>
+                    </div>
+                </div>
+    
+        </div>
+    
+    
+    </header>
+    </body>
+    </html>

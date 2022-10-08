@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:wght@400;500;600;700;900&family=Poppins:wght@500&family=Public+Sans:ital,wght@0,500;1,700&family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+
+    <!-- css link  -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- bootstrap-icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"></head>
+    
+    <!-- bootstrap script -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/373b6cf8f7.js" crossorigin="anonymous"></script>
+    
+    <!-- bootstrap icon  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    
+<header >
+
+
+    <div class="menu_side ">
+        <div class="spotify0">
+            <h1> <a href="index.html"> <i class="bi bi-spotify"></i> Spotify </a> </h1>
+        </div>
+        <div class="spotify1">
+            <h4><a href="index.html"><i class="bi bi-house-door-fill"></i>Home</a></h4>
+            <h4><a href="index2.html"><i class="bi bi-search"></i>Search</a> </h4>
+            <h4><a href="#"><i class="bi bi-collection-fill"></i> My library </a></h4>
+        </div>
+
+        <div class="spotify2">
+            <h4><a href="#"><i class="bi bi-plus-square-fill"></i> Create Playlist </a></h4>
+            <h4><a href="#"><i class="bi bi-bag-heart-fill"></i> Liked Songs </a></h4>
+        </div>
+
+        <div class="spotify3">
+            <h4>Cookies</h4>
+            <h4>Privacy</h4>
+        </div>
+
+    </div>
+
+
+
+
+        
+
+    <div class="song_side ">
+
+        <!-- nav bar  -->
+        
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="backForward navbar-brand" href="#">
+                    <i class="bi bi-chevron-left"></i>
+                    <i class="bi bi-chevron-right"></i>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+            <div class="text collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#" class=" nav-link">Premium</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class=" nav-link">Support</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class=" nav-link">Download</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">|</a>
+                    </li>
+                    <li>
+                        <button type="button" class="btn btn-link">Sign up</button>                        
+                    </li>
+                    <li>
+                        <button type="button" class=" btn btn-light rounded-5 " >Log in</button>
+                    </li>
+                </ul>
+            </div> 
+
+        </nav>
+
+
+        <div class="song_side_content">
+            
+            <!-- song side List 1  -->
+            <div class="song_side1">
+
+                <div class="song_list">
+
+                    <h3>Spotify Playlists</h3>
+
+                    <div class="list row">
+
+                        <div class="card col-2 bg-dark bg-opacity-25" style="width: 13rem; height: 19rem;">
+                            <img src="image/todaytophit.png" class="card-img-top mt-3">
+                            <i class="bi playListPlay bi-play-circle-fill" id="2"></i>
+                            <div class="card-body">
+                                <h5 class="card-title">Today's Top Hit</h5>
+                                <p class="card-text"> Bad Bunny is on top of the Hottest</p>
+                            </div>
+                        </div>
+
+                        <div class="card col-2 bg-dark bg-opacity-50" style="width: 13rem; height: 19rem;">
+                            <img src="image/rapcaviar.png" class="card-img-top mt-3">
+                            <i class="bi playListPlay bi-play-circle-fill" id="2"></i>
+                            <div class="card-body">
+                                <h5 class="card-title">Rapcaviar</h5>
+                                <p class="card-text">New music from Roddy Ricch, Kodak Black and Quavo & Takeoff.</p>
+                            </div>
+                        </div>
+
+                        <div class="card col-2 bg-dark bg-opacity-50" style="width: 13rem; height: 19rem;">
+                            <img src="image/allout90.png" class="card-img-top mt-3">
+                            <i class="bi playListPlay bi-play-circle-fill" id="2"></i>
+                            <div class="card-body">
+                                <h5 class="card-title">All Out 2010s</h5>
+                                <p class="card-text">The biggest songs of the 2010s.</p>
+                            </div>
+                        </div>
+
+                        <div class="card col-2 bg-dark bg-opacity-50" style="width: 13rem; height: 19rem;">
+                            <img src="image/rockclassics.png" class="card-img-top mt-3">
+                            <i class="bi playListPlay bi-play-circle-fill" id="2"></i>
+                            <div class="card-body">
+                                <h5 class="card-title">Rock Classics</h5>
+                                <p class="card-text">Rock legends & epic songs that continue to inspire generations.</p>
+                            </div>
+                        </div>
+
+                        <div class="card col-2 bg-dark bg-opacity-50" style="width: 13rem; height: 19rem;">
+                            <img src="image/latino.png" class="card-img-top mt-3">
+                            <i class="bi playListPlay bi-play-circle-fill" id="2"></i>
+                            <div class="card-body">
+                                <h5 class="card-title">Viva Latino</h5>
+                                <p class="card-text">Today's top Latin hits, elevando nuestra musica.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- song side List 2-->
+            <div class="song_side1">
+
+                <div class="song_list">
+
+                    <h3>Mood</h3>
+
+                    <div class="list row">
+
+                        <div class="card col-2 bg-dark bg-opacity-25" style="width: 13rem; height: 19rem;">
+                            <a href="index3.html"><img src="image/booster.png" class="card-img-top mt-3"></a>
+                            <i class="bi playListPlay bi-play-circle-fill" id="2"></i>
+                            <div class="card-body">
+                                <h5 class="card-title">Mood Booster</h5>
+                                <p class="card-text">Get happy with today's dose of feel-good songs!</p>
+                            </div>
+                        </div>
+
+                        <div class="card col-2 bg-dark bg-opacity-50" style="width: 13rem; height: 19rem;">
+                            <img src="image/good.png" class="card-img-top mt-3">
+                            <i class="bi playListPlay bi-play-circle-fill" id="2"></i>
+                            <div class="card-body">
+                                <h5 class="card-title">Feelin'Good</h5>
+                                <p class="card-text">Feel good with this positively timeless playlist!</p>
+                            </div>
+                        </div>
+
+                        <div class="card col-2 bg-dark bg-opacity-50" style="width: 13rem; height: 19rem;">
+                            <img src="image/goodClassic.png" class="card-img-top mt-3">
+                            <i class="bi playListPlay bi-play-circle-fill" id="2"></i>
+                            <div class="card-body">
+                                <h5 class="card-title">Feel Good Classical</h5>
+                                <p class="card-text">Happy vibes for an upbeat morning.</p>
+                            </div>
+                        </div>
+
+                        <div class="card col-2 bg-dark bg-opacity-50" style="width: 13rem; height: 19rem;">
+                            <img src="image/idk.png" class="card-img-top mt-3">
+                            <i class="bi playListPlay bi-play-circle-fill" id="2"></i>
+                            <div class="card-body">
+                                <h5 class="card-title">idk.</h5>
+                                <p class="card-text">We hear you.</p>
+                            </div>
+                        </div>
+
+                        <div class="card col-2 bg-dark bg-opacity-50" style="width: 13rem; height: 19rem;">
+                            <img src="image/goodBeat.png" class="card-img-top mt-3">
+                            <i class="bi playListPlay bi-play-circle-fill" id="2"></i>
+                            <div class="card-body">
+                                <h5 class="card-title">Feel Good Beats</h5>
+                                <p class="card-text">Uplifting instrumental beats to brighten your day.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- song side List 3-->
+            <div class="song_side1">
+
+                <div class="song_list">
+
+                    <h3>Focus</h3>
+
+                    <div class="list row">
+
+                        <div class="card col-2 bg-dark bg-opacity-25" style="width: 13rem; height: 19rem;">
+                            <img src="image/piano.png" class="card-img-top mt-3">
+                            <i class="bi playListPlay bi-play-circle-fill" id="2"></i>
+                            <div class="card-body">
+                                <h5 class="card-title">Peaceful Piano</h5>
+                                <p class="card-text">Relax and indulge with beautiful piano pieces</p>
+                            </div>
+                        </div>
+
+                        <div class="card col-2 bg-dark bg-opacity-50" style="width: 13rem; height: 19rem;">
+                            <img src="image/focus.png" class="card-img-top mt-3">
+                            <i class="bi playListPlay bi-play-circle-fill" id="2"></i>
+                            <div class="card-body">
+                                <h5 class="card-title">Deep Focus</h5>
+                                <p class="card-text">Keep calm and focus with ambient and post-rock music.</p>
+                            </div>
+                        </div>
+
+                        <div class="card col-2 bg-dark bg-opacity-50" style="width: 13rem; height: 19rem;">
+                            <img src="image/study.png" class="card-img-top mt-3">
+                            <i class="bi playListPlay bi-play-circle-fill" id="2"></i>
+                            <div class="card-body">
+                                <h5 class="card-title">Instrumental Study</h5>
+                                <p class="card-text">Focus with soft study music in the background.</p>
+                            </div>
+                        </div>
+
+                        <div class="card col-2 bg-dark bg-opacity-50" style="width: 13rem; height: 19rem;">
+                            <img src="image/lofi.png" class="card-img-top mt-3">
+                            <i class="bi playListPlay bi-play-circle-fill" id="2"></i>
+                            <div class="card-body">
+                                <h5 class="card-title">Chill Lofi Study beats</h5>
+                                <p class="card-text">The perfect study beats, twenty four seven.</p>
+                            </div>
+                        </div>
+
+                        <div class="card col-2 bg-dark bg-opacity-50" style="width: 13rem; height: 19rem;">
+                            <img src="image/flow.png" class="card-img-top mt-3">
+                            <i class="bi playListPlay bi-play-circle-fill" id="2"></i>
+                            <div class="card-body">
+                                <h5 class="card-title">Productive Morning</h5>
+                                <p class="card-text">uptempo instrumental hip hop beats.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <footer>
+
+                <div class=" row footer_section ">
+
+                    <!-- <div class="row"> -->
+                        <div class="col-3">
+                            <ul>
+                                <li class="footer_header">Company</li>
+                                <li>About</li>
+                                <li>Jobs</li>
+                                <li>For the Record</li>
+                            </ul>
+                        </div>
+
+                        <div class="col-3">
+                            <ul>
+                                <li class="footer_header">Communites</li>
+                                <li>For Artists</li>
+                                <li>Developers</li>
+                                <li>Advertising</li>
+                                <li>Investors</li>
+                                <li>Vendor</li>
+                            </ul>
+                        </div>
+
+                        <div class="col-3">
+                            <ul>
+                                <li class="footer_header">Useful links</li>
+                                <li>Support</li>
+                                <li>Free Mobile App</li>
+                                <li>Car Thing</li>
+                            </ul>
+                        </div>
+
+                        <div class="col-3">
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-facebook"></i>
+                        </div>
+                    <!-- </div> -->
+
+                    <hr>
+
+                    <!-- <div class="row"> -->
+                        <div class="col-10 footer_section_2">
+                            <ul>
+                                <li>Legal</li>
+                                <li>Privacy Center</li>
+                                <li>Privacy Policy</li>
+                                <li>Cookies</li>
+                                <li>About Ads</li>
+                                <li>Additional CA Privacy Disclosures</li>
+                            </ul>
+                        </div>
+
+                        <div class="col-2 footer_section_2">
+                            <ul>
+                                <li><i class="fa-regular fa-copyright"></i></li>
+                                <li>2022 Spotify AB</li>
+                            </ul>
+                            
+                        </div>
+                    <!-- </div> -->
+
+                </div>
+
+
+                
+
+
+
+            </footer>
+        
+
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+    <div class="master_play  ">
+
+            <div class="master_play0"></div>
+
+
+            <div class="master_play1">
+                <div class="icon">
+                        <i class="bi shuffle bi-shuffle"></i>
+                        <i class="bi start bi-skip-start-fill"></i>
+                        <i class="bi pause bi-pause-circle-fill"></i>
+                        <i class="bi skip bi-skip-end-fill"></i>
+                        <i class="bi repeat bi-repeat"></i>
+                </div>
+                
+                <div class="bar1">
+                    <span id="currentStart1">0:00</span>
+
+                    <div class="barRange">
+                        <input type="range"  id="seek" min="0" max="100">
+                        <div class="barRange1" id="bar2"></div>
+                        <div class="dot"></div>
+                    </div>
+
+                    <span id="currentStart2">0:00</span>
+
+                </div>
+
+            </div>
+
+            <div class="master_play2">
+                <div class="icon">
+                    <i class="bi mic bi-mic"></i>
+                    <i class="bi list bi-view-list"></i>
+                    <i class="bi tablet bi-tablet"></i>
+                    <i class="bi volume bi-volume-up"></i>
+                </div>
+
+                <div class="volRange">
+                    <input type="range" min="0" max="100">
+                    <div class="volRange1"></div>
+                </div>
+            </div>
+
+    </div>
+
+
+</header>
+</body>
+</html>

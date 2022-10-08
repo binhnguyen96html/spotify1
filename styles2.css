@@ -1,0 +1,492 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    /* Include padding and border in the element's total width and height: */
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    /* Using the CSS3 vh (viewport-height) Unit */
+    height: 100vh;
+    /* background: burlywood; */
+    display: grid;
+    place-items: center;
+}
+
+/* SIZE */
+header{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    color:#fff
+    /* border: 1px solid #fff; */
+}
+
+header .menu_side{
+    width: 13%;
+    height: 88%;
+    background-color: rgb(5, 5, 5);
+    position: fixed;
+    /* border: 1px solid #fff; */
+}
+
+header .song_side{
+    width: 87%;
+    /* height: 88%; */
+    background: #000;
+    /* background-image: linear-gradient(rgb(9, 8, 8),rgb(29, 25, 25)); */
+    /* box-shadow: inset 100px 100px 100px rgb(14, 13, 13); */
+    box-shadow: inset 1500px 300px 100px rgba(65, 64, 64, 0.4);
+    position: fixed;
+    left: 13%
+}
+
+header .master_play{
+    width: 100%;
+    height: 12%;
+    box-shadow: 5px 0px 2px rgb(50, 48, 48);
+    background: rgb(26, 24, 24);
+    position: fixed;
+    top: 88%;
+    /* border: 1px solid #fff; */
+} 
+
+
+
+/* MENU SIDE  */
+
+/* logo  */
+
+header .menu_side .spotify0 a{
+    text-decoration: none;
+    color: #fff;
+}
+header .menu_side .spotify0 h1{
+    font-size: 21px;
+    margin: 15px 0px 0px 40px;
+    cursor: pointer;
+    display:flex;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+header .menu_side .spotify0 h1 .bi{
+    font-size: 30px;
+    padding-right: 5px;
+    align-items: center;
+}
+
+/* spotify1  */
+header .menu_side .spotify1{
+    margin: 35px 0px 0px 40px;
+}
+header .menu_side .spotify1 h4{
+    font-size: 12px;
+    padding-bottom: 10px;
+    color:#AAAAAA;
+    /* bieu tuon re chuot */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: .1s linear;
+    text-decoration: none;
+}
+header .menu_side .spotify1 h4 a{
+    text-decoration: none;
+    color: #AAAAAA;
+}
+header .menu_side .spotify1 h4 a:active{
+    text-decoration: none;
+    color: #fff;
+}
+header .menu_side .spotify1 a:hover{
+    color: #fff;
+}
+header .menu_side .spotify1 h4 .bi{
+    font-size: 20px;
+    padding-right: 10px;
+}
+
+
+
+/* spotify2  */
+
+header .menu_side .spotify2 {
+    padding: 15px 0px 0px 40px;
+}
+header .menu_side .spotify2 h4 {
+    font-size: 12px;
+    padding-bottom: 10px;
+    color:#AAAAAA;
+    cursor: pointer;
+    display:flex;
+    align-items: center;
+    transition:  .1s linear;
+}
+header .menu_side .spotify2 a {
+    text-decoration: none;
+    color:#AAAAAA;
+}
+header .menu_side .spotify2 a:hover {
+    color:#fff;
+}
+header .menu_side .spotify2 h4 a:active{
+    text-decoration: none;
+    color: #fff;
+}
+header .menu_side .spotify2 h4 .bi {
+    font-size: 20px;
+    padding-right: 10px; 
+}
+
+
+/* spotify 3  */
+
+header .menu_side .spotify3 {
+    padding: 200px 0px 0px 40px;
+}
+header .menu_side .spotify3 h4 {
+    padding-bottom: 10px;
+    font-size: 9px;
+    color: #AAAAAA;
+}
+
+
+
+/* MASTER PLAY  */
+
+header .master_play{
+    display: flex;
+    z-index: 22;
+    /* border: 1px solid #fff; */
+}
+
+
+/* master play 0 */
+header .master_play .master_play0{
+    width: 30%;
+    height: 100%;
+    /* border: 1px solid #fff; */
+}
+
+
+/* master play 1 */
+
+header .master_play .master_play1{
+    width: 40%;
+    height: 100%;
+    /* border: 1px solid #fff; */
+}
+header .master_play .master_play1 .icon {
+    width: 100%;
+    height: 70%;
+    /* border: 1px solid #fff; */
+}
+header .master_play .master_play1 .bar1 {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    /* border: 1px solid #fff; */
+}
+header .master_play .master_play1 .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #AAAAAA;
+    cursor: pointer;
+    transition: .1s linear;
+}
+header .master_play .master_play1 .icon .shuffle{
+    font-size: 15px;
+    padding-right: 15px;
+}
+header .master_play .master_play1 .icon .shuffle:hover{
+    color: #fff;
+}
+header .master_play .master_play1 .icon .start{
+    font-size: 23px;
+    padding-right: 15px;
+}header .master_play .master_play1 .icon .start:hover{
+    color: #fff;
+}
+header .master_play .master_play1 .icon .pause{
+    font-size: 30px;
+    color: #fff;
+}
+header .master_play .master_play1 .icon .pause:hover{
+    color: #fff;
+    transform: scale(1.1);
+}
+header .master_play .master_play1 .icon .skip{
+    font-size: 23px;
+    padding-left: 15px;
+}
+header .master_play .master_play1 .icon .skip:hover{
+    color: #fff;
+}
+header .master_play .master_play1 .icon .repeat{
+    font-size: 15px;
+    padding-left: 15px;
+}
+header .master_play .master_play1 .icon .repeat:hover{
+    color: #fff;
+}
+
+header .master_play .master_play1 .bar1 .barRange {
+    position: relative;
+    width: 85%;
+    height: 5px;
+    background: #514b4b;
+    margin: 4px 0px 0px 20px;
+    border-radius: 2px;
+}
+header .master_play .master_play1 .bar1 .barRange input {
+    position: absolute;
+    width: 100%;
+    top: -6px;
+    cursor: pointer;
+    z-index: 99999999;
+    transition: .1s linear;
+    opacity: 0;
+}
+header .master_play .master_play1 .bar1 .barRange .barRange1 {
+    position: absolute;
+    width: 50%;
+    height: 5px;
+    background:#fff;
+    border-radius: 2px;
+}
+
+header .master_play .master_play1 span{
+    color: #fff;
+    width: 25px;
+    height: auto;
+    font-size: 11px;
+    /* border: 1px solid #fff; */
+}
+header .master_play .master_play1 #currentStart1{
+    padding: 0px 0px 0px 15px; 
+}
+header .master_play .master_play1 #currentStart2{
+    padding: 0px 0px 0px 10px; 
+}
+
+
+/* master play 2 */
+
+header .master_play .master_play2{
+    width: 30%;
+    height: 100%;
+    /* border: 1px solid #fff; */
+}
+
+header .master_play .master_play2{
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 210px;
+}
+
+header .master_play .master_play2 .icon .bi{
+    color: #AAAAAA;
+    padding-right: 5px;
+    cursor: pointer;
+}
+header .master_play .master_play2 .icon .mic{
+    font-size: 15px;
+}
+header .master_play .master_play2 .icon .mic:hover{
+    color: #fff;
+}
+header .master_play .master_play2 .icon .list{
+    font-size: 15px;
+}
+header .master_play .master_play2 .icon .list:hover{
+    color: #fff;
+}
+header .master_play .master_play2 .icon .tablet{
+    font-size: 15px;
+}
+header .master_play .master_play2 .icon .tablet:hover{
+    color: #fff;
+}
+header .master_play .master_play2 .icon .volume{
+    font-size: 20px;
+}
+header .master_play .master_play2 .icon .volume:hover{
+    color: #fff;
+}
+
+header .master_play .master_play2 .volRange {
+    position: relative;
+    width: 126px;
+    height: 5px;
+    background: #514b4b;
+    border-radius: 2px;
+    }
+header .master_play .master_play2 .volRange input{
+    position: absolute;
+    z-index: 999999999999999999;
+    top: -5px;
+    cursor: pointer;
+    transition: .1s linear;
+    right: 0px;
+    opacity: 0;
+}
+header .master_play .master_play2 .volRange .volRange1{
+    position: absolute;
+    width: 50%;
+    height: 5px;
+    background: #fff;
+    border-radius: 2px;
+}
+
+
+
+
+/* SONG SIDE  */
+
+/* nav side  */
+
+header .song_side nav {
+    width: 100%;
+    /* height: 100px; */
+    padding: 0.5%;
+    background: #000;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    /* border: 1px solid #fff; */
+}
+header .song_side nav .text ul li .btn{
+    font-size: 12px;
+}
+
+header .song_side nav .backForward .bi {
+    color: #AAAAAA;
+}
+header .song_side nav .backForward .bi:hover {
+    color: #fff;
+}
+
+/* search  */
+header .song_side nav .input-group .input-group-text {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: #fff;
+    border: none;
+    height: 30px;
+    width: 30px;
+}
+header .song_side nav .input-group .form-control {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #fff;
+    border: none;
+    width: 300px;
+    height: 30px;
+    font-size: 10px;
+    text-align: left;
+}
+
+
+header .song_side nav .text ul li .btn-link {
+    text-decoration: none;
+    color: #AAAAAA;
+}
+header .song_side nav .text ul li:hover .btn-link {
+    color: #fff;
+}
+header .song_side nav .text ul li .btn-light{
+    width: 90px;
+}
+header .song_side nav .text ul li:hover .btn-light{
+    transform: scale(1.05);
+}
+
+
+/* song_side_content  */
+
+header .song_side .song_side_content {
+    width: 100%;
+    height: 87vh;
+    overflow: auto;
+    background: linear-gradient(rgba(29,29, 29, 0.9),rgba(0, 0, 0, 0.9)),#000 ;
+    /* border: 1px solid #fff; */
+}
+
+header .song_side .song_side_content::-webkit-scrollbar {
+    display: none;
+}
+
+/* nav bar for categories  */
+header .song_side .song_side_content nav {
+    background-color: #000 !important;
+    box-shadow: inset 0px 300px 100px rgba(65, 64, 64, 0.4);
+}
+
+header .song_side .song_side_content nav .text .btn{
+    width: auto;
+    margin: 5px 10px 5px 0px;
+}
+
+/* song_side1 categories*/
+
+header .song_side .song_side1 {
+    width: 95%;
+    /* border: 1px solid #fff; */
+    margin-left: 2%;
+}
+header .song_side .song_side1 .song_list h3 {
+    margin: 2% 0% 1% 0%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+header .song_side .song_side1 .song_list .list .image_list{
+    width: 200px; 
+    height: 200px;
+    margin: 1% 0% 0% 0%;
+    /* border: 1px solid #fff; */
+}
+header .song_side .song_side1 .song_list .list .image_list img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+
+
+
+/* footer section  */
+header .song_side footer {
+    margin: 6% 0% 5% 0%;
+    color: #AAAAAA;
+    line-height: 2;
+}
+
+header .song_side footer .footer_section ul li{
+    list-style-type: none;
+    font-size: 14px;
+}
+header .song_side footer .footer_section ul .footer_header{
+    font-weight: bold;
+    color: #fff;
+}
+header .song_side footer .footer_section .fa-brands{
+   color: #fff;
+}
+header .song_side footer .footer_section hr{
+    margin-left: 3%;
+    width: 95%;
+}
+
+header .song_side footer .footer_section_2 ul li{
+    list-style-type: none;
+    display: inline;
+    padding: 5% 2% 0% 0%;
+    font-size: 12px;
+}
