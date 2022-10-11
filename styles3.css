@@ -287,7 +287,7 @@ header .master_play .master_play2{
     display: flex;
     align-items: center;
     position: relative;
-    padding-left: 210px;
+    padding-left: 150px;
 }
 
 header .master_play .master_play2 .icon .bi{
@@ -545,9 +545,7 @@ header .song_side .song_side_content .songsideContainer table .songListTitle {
     width: 100%;
     height: 100%;
  }
- /* header .song_side .song_side_content table .songListTitle .textListTitle{
-   float: left;
- } */
+
  header .song_side .song_side_content .songsideContainer table .songListTitle .textListTitle p{
     margin: 5px 0px 0px 10px;
   }
