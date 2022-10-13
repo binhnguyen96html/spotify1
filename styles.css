@@ -38,7 +38,8 @@ header .song_side{
     width: 87%;
     background: linear-gradient(rgba(29,29, 29, 0.9),rgba(0, 0, 0, 0.9)),#000 ;
     position: fixed;
-    left: 13%
+    left: 13%;
+    /* border: 1px solid #fff; */
 }
 
 header .master_play{
